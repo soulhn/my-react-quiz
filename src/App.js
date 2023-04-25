@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AmiiboItem from "./components/AmiiboItem";
+import CharacterSelect from "./components/CharacterSelect";
+import { useAmiiboReducer } from "./useAmiiboReducer";
+import { useAmiiboData } from "./hooks/useAmiiboData";
+import { Container } from "./styles";
 
 function App() {
+  const [state, dispatch] = useAmiiboReducer();
+  const { characters, selectedCharacter, amiibos } = state;
+
+  useAmiiboData(selectedCharacter, dispatch);
+
+  const setSelectedCharacter = (character) => {
+    dispatch({ type: "SET_SELECTED_CHARACTER", payload: character });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <CharacterSelect characters={characters} selectedCharacter={selectedCharacter} setSelectedCharacter={setSelectedCharacter} />
+      {amiibos.map((amiibo) => (
+        <AmiiboItem key={amiibo.tail} amiibo={amiibo} />
+      ))}
+    </Container>
   );
 }
 
