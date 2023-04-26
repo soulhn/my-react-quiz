@@ -50,6 +50,11 @@
    - ItemContainer의 스타일 완성
    - Item의 스타일을 완성
 
+## test 실행 방법
+
+1. npm install
+2. npm test
+
 ## CRA + 추가 사용 라이브러리
 
 1. axios
