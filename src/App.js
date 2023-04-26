@@ -1,6 +1,7 @@
 // 컴포넌트를 불러옵니다.
 import AmiiboItem from "./components/AmiiboItem";
 import CharacterSelect from "./components/CharacterSelect";
+import Header from "./components/Header";
 
 //Reducer를 불러옵니다.
 import { useAmiiboReducer } from "./reducers/useAmiiboReducer";
@@ -9,7 +10,7 @@ import { useAmiiboReducer } from "./reducers/useAmiiboReducer";
 import { useAmiiboData } from "./hooks/useAmiiboData";
 
 //스타일을 불러옵니다.
-import { Container, ItemContainer } from "./styles";
+import { Container, ItemContainer } from "./styles/styles";
 
 function App() {
   const [state, dispatch] = useAmiiboReducer();
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <Container>
+      <Header />
       <CharacterSelect characters={characters} selectedCharacter={selectedCharacter} setSelectedCharacter={setSelectedCharacter} />
       <ItemContainer>
         {amiibos.map((amiibo) => (

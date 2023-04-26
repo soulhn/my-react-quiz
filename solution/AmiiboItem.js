@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { fetchPurchaseDecision } from "../api/api";
-import { Item } from "../styles/styles";
+import { Item } from "../styles";
 
 function AmiiboItem({ amiibo }) {
   const [purchaseDecision, setPurchaseDecision] = useState(null);

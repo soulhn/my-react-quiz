@@ -1,5 +1,5 @@
 import React from "react";
-import { SelectBox } from "../styles";
+import { SelectBox } from "../styles/styles";
 
 function CharacterSelect({ characters, selectedCharacter, setSelectedCharacter }) {
   const handleChange = (event) => {
@@ -8,7 +8,7 @@ function CharacterSelect({ characters, selectedCharacter, setSelectedCharacter }
 
   return (
     <SelectBox value={selectedCharacter} onChange={handleChange}>
-      <option value="">Select a character</option>
+      <option value="">원하는 캐릭터를 선택해주세요</option>
       {characters.map((character) => (
         <option key={character} value={character}>
           {character}
