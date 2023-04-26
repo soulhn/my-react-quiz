@@ -1,8 +1,48 @@
-## 문제 설명 및 의도
+## 프로젝트 아이디어 생성 과정
 
-1. 오픈 API (https://amiiboapi.com/)를 활용하여 AJAX 통신하기
+- 비동기 통신을 위한 아이디어를 위해 오픈 API를 찾았습니다.
+- amiibo라는 피규어 API를 찾았고 사진과 다양한 정보를 제공하여 적절하고 마리오 관련 정보를 제공하여 선택했습니다.
+- 슈퍼 마리오 브라더스 영화의 개봉으로 마리오 IP의 상승으로 적용 해보았습니다.
+- 어린이날이 다가오니 가져온 데이터의 피규어를 어린이날에 구매해도 될지 말지 결정해주는 프로젝트로 진행했습니다.
+
+## 프로젝트 개요
+
+- 어린이날을 기념하여 amiibo 피규어 정보를 가져오고 yesno를 응답하는 API로 구매해도 될 지 말지를 알려주는 프로젝트
+
+## 문제를 푸는 대상
+
+- React와 JS, CSS, HTML 기초 지식이 있는 사람
+
+## 문제 의도
+
+- 비동기 통신[axios 라이브러리 사용, async/aswait 문법 사용하기], OPEN API를 직접 읽고 활용하기
+
+  1. 오픈 API (https://amiiboapi.com/docs/)를 읽고 Amiibo 정보 가져오기
+  2. 오픈 API (https://yesno.wtf/#api)를 읽고 활용하여 Yes, No 결정 정보 가져오기
+
+- 컴포넌트 스타일링
+
+  1. 스켈레톤 코드를 이용하여 React Styled Components를 활용하여 스타일을 적용할 수 있습니다.
+
+- 상태 관리
+  1. useReducer의 사용 방법을 익힐 수 있습니다.
+  2. useState의 사용 방법을 익힐 수 있습니다. (https://react.dev/reference/react/useReducer)
+
+## 지시사항[지시사항을 읽고 문제를 해결하세요.]
+
+0. 프로젝트 전체 구조를 읽어보면서 데이터의 흐름을 파악하세요.
+1. 사용하는 OPEN API를 문서를 읽고 활용법을 익히세요
+
+오픈 API (https://amiiboapi.com/docs/)
+
+오픈 API (https://yesno.wtf/#api)
+
+2. src/api/api.js로 폴더로 이동하세요.
 
 ## 사용 라이브러리
 
 1. axios
 2. npm install styled-components
+3. npm install --save-dev @babel/core @babel/preset-env babel-jest
+4. npm install --save-dev @testing-library/react @testing-library/jest-dom
+5. npm install --save-dev jest-styled-components

@@ -1,24 +1,35 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 20px;
+`;
+
+export const ItemContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
 `;
 
 export const Item = styled.div`
   background-color: #f0f0f0;
   border-radius: 4px;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  width: 100%;
-  max-width: 400px;
+  margin: 10px;
+  padding: 10px;
+  width: 400px;
   text-align: center;
+
+  & > img {
+    width: 250px;
+    height: 350px;
+  }
 `;
 
 export const SelectBox = styled.select`
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  margin-bottom: 20px;
+  padding: 10px;
 `;

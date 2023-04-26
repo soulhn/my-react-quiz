@@ -1,9 +1,15 @@
-import React from "react";
+// 컴포넌트를 불러옵니다.
 import AmiiboItem from "./components/AmiiboItem";
 import CharacterSelect from "./components/CharacterSelect";
-import { useAmiiboReducer } from "./useAmiiboReducer";
+
+//Reducer를 불러옵니다.
+import { useAmiiboReducer } from "./reducers/useAmiiboReducer";
+
+//커스텀 Hook을 불러옵니다.
 import { useAmiiboData } from "./hooks/useAmiiboData";
-import { Container } from "./styles";
+
+//스타일을 불러옵니다.
+import { Container, ItemContainer } from "./styles";
 
 function App() {
   const [state, dispatch] = useAmiiboReducer();
@@ -18,9 +24,11 @@ function App() {
   return (
     <Container>
       <CharacterSelect characters={characters} selectedCharacter={selectedCharacter} setSelectedCharacter={setSelectedCharacter} />
-      {amiibos.map((amiibo) => (
-        <AmiiboItem key={amiibo.tail} amiibo={amiibo} />
-      ))}
+      <ItemContainer>
+        {amiibos.map((amiibo) => (
+          <AmiiboItem key={amiibo.tail} amiibo={amiibo} />
+        ))}
+      </ItemContainer>
     </Container>
   );
 }
