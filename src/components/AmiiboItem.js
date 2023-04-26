@@ -25,11 +25,6 @@ function AmiiboItem({ amiibo }) {
 
   return (
     <Item>
-      <img src={amiibo.image} alt={amiibo.name} />
-      <h4>{amiibo.name}</h4>
-      <p>시리즈: {amiibo.amiiboSeries}</p>
-      <p>게임 시리즈: {amiibo.gameSeries}</p>
-      <p>출시일: {amiibo.release.eu || "정보 없음"}</p>
       <button onClick={handleButtonClick} disabled={buttonDisabled}>
         어린이날 이거 사도 될까요?
       </button>

@@ -20,8 +20,8 @@ const yesNoApi = axios.create({
 // 4. reducers/useAmiiboReducer.js에서 characters 배열에 API로 호출 할 수 있는 값을 추가하여 다른 캐릭터도 둘러보세요.[선택]
 export const fetchAmiibos = async (character) => {
   try {
-    const response = await amiiboApi.get(`/amiibo/?name=${character}`);
-    return response.data.amiibo;
+    const response = await amiiboApi.get();
+    return "지시사항에 맞게 해결 해주세요.";
   } catch (error) {
     console.error("fetchAmiibos 호출 중 에러 발생:", error);
     return [];
@@ -36,8 +36,8 @@ export const fetchAmiibos = async (character) => {
 // 4. try{} catch{}를 사용하여 요청 중 오류 사항을 처리해보세요[선택]
 export const fetchPurchaseDecision = async () => {
   try {
-    const response = await yesNoApi.get("/api");
-    return response.data.answer;
+    const response = await yesNoApi.get();
+    return "지시사항에 맞게 해결 해주세요.";
   } catch (error) {
     console.error("fetchPurchaseDecision 호출 중 에러 발생:", error);
     return null;

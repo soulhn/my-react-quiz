@@ -8,9 +8,7 @@ function Header() {
   // 지시사항
   // toggleDarkMode 함수를 완성하세요.
   // setDarkMode를 활용하여 클릭 마다 darkMode 값을 true는 false로, false 값은 true로 변환하게 작성합니다.
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  const toggleDarkMode = () => {};
 
   return (
     <HeaderContainer darkMode={darkMode}>

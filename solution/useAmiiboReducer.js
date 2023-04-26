@@ -1,13 +1,11 @@
 import { useReducer } from "react";
 
 // 지시사항 useReducer에 사용 할 초기 값과 amiiboReducer를 완성 시키세요.
-// initialState의 초기 값을 설정해 줍니다.
 
+// initialState의 초기 값을 설정해 줍니다.
 // 1. characters에는 "mario", "Luigi", "peach", "Zelda", "Yoshi" 가진 배열을 작성해주세요.
 // 해당 값들이 API 문서에서 어떤 값을 가져오는지도 확인하세요.
-
 // 2. selectedCharater의 초기 값을 빈 문자열로 설정해주세요.
-
 // 3. amiibos의 초기 값을 빈 배열로 설정 해주세요.
 export const initialState = {
   characters: ["mario", "Luigi", "peach", "Zelda", "Yoshi"],

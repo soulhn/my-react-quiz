@@ -50,7 +50,7 @@
    - ItemContainer의 스타일 완성
    - Item의 스타일을 완성
 
-## 사용 라이브러리
+## CRA + 추가 사용 라이브러리
 
 1. axios
 2. npm install styled-components
