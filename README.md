@@ -62,3 +62,36 @@
 3. npm install --save-dev @babel/core @babel/preset-env babel-jest
 4. npm install --save-dev @testing-library/react @testing-library/jest-dom
 5. npm install --save-dev jest-styled-components
+
+## 느낀 점
+
+채용 과제이지만 뜻 깊은 4일을 보낼 수 있게 된 것 같아 감사드립니다.  
+접하지 못한 과제를 만나며 어려움을 극복하고 도전하는 과정에서 개인적으로도 성장한 것 같습니다.  
+한 가지 아쉬운 점이 있다면 구체적인 문제를 푸는 대상을 설정하지 못하여 어떤 난이도로 작성해야하는 것에 대한 아쉬움이 남습니다.
+
+## 🟢 찾은 오탈자
+
+과제 진행 중 찾은 오탈자를 공유드립니다.
+
+- 문제 풀이 1번 사진 갤러리 : folat: 'left' 오타가 있었습니다.
+
+```js
+  <label
+    style={{
+      backgroundColor: '#fff4e6',
+      border: '2px solid #f76707',
+      fontSize: '20px',
+      folat: 'left',
+      marginRight: '10px',
+    }}
+    htmlFor="rowCount"
+  >
+```
+
+- 문제 풀이 1번 사진 갤러리  
+  className이 image인 div 요소에 아래 CSS를 적용하세요.  
+  ⇒  image인 img 요소에 아래 CSS를 적용하세요로 수정이 필요해보입니다.
+
+- 문제 제작/과제 안내
+  Node 및 package 버전은 제한이 없습니다. 구성한 개발 환경은 pckage.json에 명시하세요.  
+  => package.json으로 수정이 필요해보입니다.
