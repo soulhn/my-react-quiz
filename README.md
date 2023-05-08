@@ -42,11 +42,15 @@
    - initialState를 작성하세요.
    - amiiboReducer를 완성 시키세요.
 
-4. src/components/Header.js로 이동하세요. (추가 지시 사항은 해당 폴더에 지시사항으로 작성)
+4. src/components/AmiiboItem.js로 이동하세요. (추가 지시 사항은 해당 폴더에 지시사항으로 작성)
+
+   - 받아온 amiibo 데이터를 확인하고 알맞게 렌더링 하세요.
+
+5. src/components/Header.js로 이동하세요. (추가 지시 사항은 해당 폴더에 지시사항으로 작성)
 
    - toggleDarkMode의 로직을 완성 시키세요.
 
-5. src/styles/styles.js로 이동하세요. (추가 지시 사항은 해당 폴더에 지시사항으로 작성)
+6. src/styles/styles.js로 이동하세요. (추가 지시 사항은 해당 폴더에 지시사항으로 작성)
    - ItemContainer의 스타일 완성
    - Item의 스타일을 완성
 
