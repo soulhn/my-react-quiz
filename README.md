@@ -67,12 +67,6 @@
 4. npm install --save-dev @testing-library/react @testing-library/jest-dom
 5. npm install --save-dev jest-styled-components
 
-## 느낀 점
-
-채용 과제이지만 뜻 깊은 4일을 보낼 수 있게 된 것 같아 감사드립니다.  
-접하지 못한 과제를 만나며 어려움을 극복하고 도전하는 과정에서 개인적으로도 성장한 것 같습니다.  
-한 가지 아쉬운 점이 있다면 구체적인 문제를 푸는 대상을 설정하지 못하여 어떤 난이도로 작성해야하는 것에 대한 아쉬움이 남습니다.
-
 ## 🟢 찾은 오탈자
 
 과제 진행 중 찾은 오탈자를 공유드립니다.
