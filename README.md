@@ -67,4 +67,6 @@
 4. npm install --save-dev @testing-library/react @testing-library/jest-dom
 5. npm install --save-dev jest-styled-components
 
+## 결과 화면 : 모든 테스트 케이스를 통과하게 된다면 결과 화면을 얻을 수 있습니다.
+<img width="1405" alt="image" src="https://github.com/soulhn/my-react-quiz/assets/88018456/0f340b23-00bc-458c-bda9-6721d5542a46">
 
